@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Bastian Díaz</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/Logo@2x.png">
+        <h1 class="header__titulo">Encriptador de Texto</h1>
+    </header>
+    <main class="main">
+        <section>
+        <textarea class="container__input" id="inputTexto" placeholder="Ingrese el texto aquí" oninput="validarInput()"></textarea>
+        <p class="container__aviso__mayusculas"><img src="./assets/bi_exclamation-circle-fill.png">
+            Solo letras minúsculas y sin tildes.  </p>
+        <div class="buttons">
+            <button class="boton__encriptar" id="encriptarBtn">Encriptar</button>
+            <button class="boton__desencriptar" id="desencriptarBtn">Desencriptar</button>
+        </div>
+    </section>
+    <section class="container__output">
+        <div class="container__output">
+        <textarea class="container__output__texto" id="outputTexto" placeholder="Ningún mensaje fué encontrado" readonly ></textarea>
+        <button class="boton__copiar" id="copiarBtn">Copiar al portapapeles</button>
+    </div>
+</section>
+</main>
+    <script src="app.js"></script>
+    <footer class="footer">
+    <p>Desarrollado por</p>
+    <p>Bastian Díaz</p>
+    </footer>
+</body>
+</html>

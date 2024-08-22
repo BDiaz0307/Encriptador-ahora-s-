@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0%;
+}
+:root{
+    --color-primario: #000000;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #0A3871;
+    --color-cuarto: #ECDFCC;
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona one", sans-serif;
+}
+
+.header{
+background-color: var(--color-cuarto);
+display: flex;
+font-family: var(--fuente-montserrat);
+align-items: center;
+color: var(--color-terciario);
+}
+
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 0px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: column;
+    flex-direction: column;
+}
+
+.container__input{
+    font-family: var(--fuente-montserrat);
+    color: var(--color-terciario);
+    font-size: 2.5rem;
+    background: #FFFFFF;
+    width: 300px;
+    height: 580px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 25px 35px; 
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+.container__aviso__mayusculas{
+    color: gray;
+    font-family: var(--fuente-montserrat);
+}
+
+.container__output{
+    background: #FFFFFF;
+    width: 300px;
+    height: 580px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 25px 35px; 
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+.container__output__texto{
+    font-family: var(--fuente-montserrat);
+    color: var(--color-terciario);
+    background: #FFFFFF;
+    width: 300px;
+    height: 580px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 25px 35px; 
+    box-sizing: border-box;
+    margin-left: 25px;
+    font-size: 2rem;
+
+}
+
+.imagen__muñeco{
+        max-width: 250px;
+        height: auto;
+        margin-bottom: 5px;
+        background-color: white;
+}
+
+.boton__encriptar, .boton__desencriptar, .boton__copiar{
+    border-radius: 22.5px;
+    cursor: pointer;
+    height: 55px;
+    width: 235px;
+    font-size: 17.5px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.buttons_copiar{
+    display: flex;
+    margin-top: 0px;
+    margin-left: 100px;
+    justify-content: space-between;
+    width: 500px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-cuarto);
+    font-family: var(--fuente-krona);
+    color: var(--color-terciario);
+}
+
